@@ -59,6 +59,10 @@ public class MyWorld extends World
         this.addObject(g8,425, 375);
         this.addObject(g9,475, 375);
         
+        lives l = new lives();
+        this.addObject(l,35,110);
+        
+        
         
         ladyBug b = new ladyBug();
         this.addObject(b,175, 250);
@@ -73,10 +77,16 @@ public class MyWorld extends World
         int xRand = Greenfoot.getRandomNumber(worldWidth);
         Flower f = new Flower();
         //System.out.println(this.stepCounter);
+        Spike j = new Spike();
         if(this.stepCounter % 144 == 0)
         {
             this.addObject(f,xRand, 325);
         }
+        if(this.stepCounter % 150 == 0)
+        {
+            this.addObject(j, xRand, 0);
+        }
+        
         /*
         if(this.stepCounter % 1000 == 0)
         {

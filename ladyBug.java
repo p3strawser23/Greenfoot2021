@@ -14,6 +14,7 @@ public class ladyBug extends Actor
     public int upCounter;
     private int stepCounter;
     public int timer;
+    
     public ladyBug ()
     {
         this.speed=2;
@@ -21,6 +22,7 @@ public class ladyBug extends Actor
         this.score=0;
         this.upCounter=0;
         this.timer=0;
+        
     }
     /**
      * Act - do whatever the ladyBug wants to do. This method is called whenever
@@ -69,6 +71,7 @@ public class ladyBug extends Actor
             World w = this.getWorld();
             w.showText("" + timer, 80, 70);
         }
+        
         /*
         else if(upCounter == 1)
         {
