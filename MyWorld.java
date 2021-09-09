@@ -19,6 +19,7 @@ public class MyWorld extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(500, 400, 1); 
         this.setBackground("grassyPlains.png");
+        
         Flower f = new Flower();
         Flower f1 = new Flower();
         Flower f2 = new Flower();
@@ -78,11 +79,11 @@ public class MyWorld extends World
         Flower f = new Flower();
         //System.out.println(this.stepCounter);
         Spike j = new Spike();
-        if(this.stepCounter % 144 == 0)
+        if(this.stepCounter % 77 == 0)
         {
             this.addObject(f,xRand, 325);
         }
-        if(this.stepCounter % 150 == 0)
+        if(this.stepCounter % 120 == 0)
         {
             this.addObject(j, xRand, 0);
         }
